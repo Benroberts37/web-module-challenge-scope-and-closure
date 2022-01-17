@@ -154,10 +154,17 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(inning, getInningScore, number) {
+  let scoresArray = []
+  for (let j = 0; j < number; j++) {
+let awayScore = 0
+let homeScore = 0
+awayScore = getInningScore()
+homeScore = getInningScore()
+scoresArray.push(`Inning 1: Away ${awayScore} - Home ${homeScore}`)
+  }
+  scoresArray.push(`The final score is: `)
 }
-
 
 
 
